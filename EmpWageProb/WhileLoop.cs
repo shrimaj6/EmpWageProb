@@ -6,22 +6,23 @@ using System.Threading.Tasks;
 
 namespace EmpWageProb
 {
-    class MonthlyWage
+    class WhileLoop
     {
         public const int IS_PART_TIME = 1;
         public const int IS_FULL_TIME = 2;
         public const int EMP_RATE_PER_HOUR = 20;
         public const int NUM_OF_WORKING_DAYS = 20;
-
-        public static void monthlywage2()
+        public const int MAX_HRS_IN_MONTH = 100;
+        public static void whileloop2()
         {
-            //VARIABLE
-            int empHrs = 0, empwage = 0, totalempwage = 0;
+            //variable
+            int empHrs = 0, totalempHrs = 0, totalWorkingDays = 0;
 
             //Computation
 
-            for (int day = 0; day < NUM_OF_WORKING_DAYS; day++)
+            while (totalempHrs <= MAX_HRS_IN_MONTH && totalWorkingDays < NUM_OF_WORKING_DAYS)
             {
+                totalWorkingDays++;
                 Random random = new Random();
                 int empCheck = random.Next(0, 3);
                 switch (empCheck)
@@ -36,11 +37,12 @@ namespace EmpWageProb
                         empHrs = 0;
                         break;
                 }
-                empwage = empHrs * EMP_RATE_PER_HOUR;
-                totalempwage += empwage;
-                Console.WriteLine("Employee Wage of Day " + (day + 1) + " is : " + empwage);
+                totalempHrs += empHrs;
+                Console.WriteLine("Days " + totalWorkingDays + " Employee Hrs :" + empHrs);
             }
-            Console.WriteLine("Total Employee Wage : " + totalempwage);
+            int totalEmpWage = totalempHrs * EMP_RATE_PER_HOUR;
+            Console.WriteLine("Total Employee Time: " + totalempHrs);
+            Console.WriteLine("Total Employee Wage: " + totalEmpWage);
         }
     }
 }

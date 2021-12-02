@@ -15,7 +15,7 @@ namespace EmpWageProb
                 Console.WriteLine("Welcome to Employee Wage Problem. ");
 
 
-            MonthlyWage.monthlywage2();
+            WhileLoop.whileloop2();
                 
 
                 Console.ReadLine();

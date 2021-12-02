@@ -15,7 +15,7 @@ namespace EmpWageProb
                 Console.WriteLine("Welcome to Employee Wage Problem. ");
 
 
-            SwitchCase.switchcase2();
+            MonthlyWage.monthlywage2();
                 
 
                 Console.ReadLine();

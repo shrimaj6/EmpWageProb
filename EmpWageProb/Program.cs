@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace EmpWageProb
 {
@@ -6,7 +10,12 @@ namespace EmpWageProb
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Emp wage Problem");
+            Console.WriteLine("Welcome to Employee Wage Problem. ");
+
+            EmpAttendence.empCheck();
+        
+
+            Console.ReadLine();
         }
     }
 }

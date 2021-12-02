@@ -15,7 +15,7 @@ namespace EmpWageProb
                 Console.WriteLine("Welcome to Employee Wage Problem. ");
 
 
-            PartTimeWage.parttimewage2();
+            SwitchCase.switchcase2();
                 
 
                 Console.ReadLine();

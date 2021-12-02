@@ -8,14 +8,21 @@ namespace EmpWageProb
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Welcome to Employee Wage Problem. ");
-
-            EmpAttendence.empCheck();
         
+        
+            static void Main(string[] args)
+            {
+                Console.WriteLine("Welcome to Employee Wage Problem. ");
 
-            Console.ReadLine();
-        }
+
+            EmpAttendence.DailyWage();
+                
+
+                Console.ReadLine();
+            }
+
+          
+        
     }
+    
 }

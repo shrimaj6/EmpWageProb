@@ -15,7 +15,7 @@ namespace EmpWageProb
                 Console.WriteLine("Welcome to Employee Wage Problem. ");
 
 
-            WhileLoop.whileloop2();
+            RefactorMethod.refactormethod2();
                 
 
                 Console.ReadLine();

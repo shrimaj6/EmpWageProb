@@ -4,10 +4,10 @@ using System.Text;
 
 namespace EmpWageProb
 {
-    class EmpAttendence
+    class PartTimeWage
     {
 
-        public static void DailyWage()
+        public static void parttimewage2()
         {
             {
                 int IS_FULL_TIME = 1;

@@ -15,7 +15,7 @@ namespace EmpWageProb
                 Console.WriteLine("Welcome to Employee Wage Problem. ");
 
 
-            EmpAttendence.DailyWage();
+            PartTimeWage.parttimewage2();
                 
 
                 Console.ReadLine();
